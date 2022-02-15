@@ -25,20 +25,23 @@ import (
 	sdk "github.com/openshift-online/ocm-sdk-go"
 	"github.com/sirupsen/logrus"
 
+	"github.com/openshift/rosa/pkg/aws"
 	"github.com/openshift/rosa/pkg/info"
 	"github.com/openshift/rosa/pkg/logging"
 	"github.com/openshift/rosa/pkg/reporter"
 )
 
 type Client struct {
-	ocm *sdk.Connection
+	ocm       *sdk.Connection
+	awsClient aws.Client
 }
 
 // ClientBuilder contains the information and logic needed to build a connection to OCM. Don't
 // create instances of this type directly; use the NewClient function instead.
 type ClientBuilder struct {
-	logger *logrus.Logger
-	cfg    *Config
+	logger    *logrus.Logger
+	cfg       *Config
+	awsClient aws.Client
 }
 
 // NewClient creates a builder that can then be used to configure and build an OCM connection.
@@ -71,13 +74,18 @@ func (b *ClientBuilder) Config(value *Config) *ClientBuilder {
 	return b
 }
 
+func (b *ClientBuilder) AWSClient(value aws.Client) *ClientBuilder {
+	b.awsClient = value
+	return b
+}
+
 // Build uses the information stored in the builder to create a new OCM connection.
 func (b *ClientBuilder) Build() (result *Client, err error) {
 	if b.cfg == nil {
 		// Load the configuration file:
 		b.cfg, err = Load()
 		if err != nil {
-			err = fmt.Errorf("Failed to load config file: %v", err)
+			err = fmt.Errorf("Fail`ed to load config file: %v", err)
 			return nil, err
 		}
 		if b.cfg == nil {
@@ -143,7 +151,8 @@ func (b *ClientBuilder) Build() (result *Client, err error) {
 		return nil, fmt.Errorf("error creating connection. Not able to get authentication token")
 	}
 	return &Client{
-		ocm: conn,
+		ocm:       conn,
+		awsClient: b.awsClient,
 	}, nil
 }
 

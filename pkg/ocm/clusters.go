@@ -142,12 +142,17 @@ func (c *Client) CreateCluster(config Spec) (*cmv1.Cluster, error) {
 		return nil, fmt.Errorf("Unable to create AWS logger: %v", err)
 	}
 
-	// Create the AWS client:
-	awsClient, err := aws.NewClient().
-		Logger(logger).
-		Build()
-	if err != nil {
-		return nil, fmt.Errorf("Failed to create AWS client: %v", err)
+	var awsClient aws.Client
+	if c.awsClient != nil {
+		awsClient = c.awsClient
+	} else {
+		// Create the AWS client:
+		awsClient, err = aws.NewClient().
+			Logger(logger).
+			Build()
+		if err != nil {
+			return nil, fmt.Errorf("Failed to create AWS client: %v", err)
+		}
 	}
 
 	spec, err := c.createClusterSpec(config, awsClient)

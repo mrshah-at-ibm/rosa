@@ -145,7 +145,9 @@ func (c *Client) CreateCluster(config Spec) (*cmv1.Cluster, error) {
 	var awsClient aws.Client
 	if c.awsClient != nil {
 		awsClient = c.awsClient
+		fmt.Println("Using existing AWS Client")
 	} else {
+		fmt.Println("Creating new ROSA Client")
 		// Create the AWS client:
 		awsClient, err = aws.NewClient().
 			Logger(logger).

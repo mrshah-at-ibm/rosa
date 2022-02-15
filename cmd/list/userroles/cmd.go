@@ -18,12 +18,12 @@ import (
 	"os"
 	"text/tabwriter"
 
-	"github.com/openshift/rosa/pkg/aws"
-	"github.com/openshift/rosa/pkg/helper"
-	"github.com/openshift/rosa/pkg/logging"
-	"github.com/openshift/rosa/pkg/ocm"
-	"github.com/openshift/rosa/pkg/output"
-	rprtr "github.com/openshift/rosa/pkg/reporter"
+	"github.com/mrshah-at-ibm/rosa/pkg/aws"
+	"github.com/mrshah-at-ibm/rosa/pkg/helper"
+	"github.com/mrshah-at-ibm/rosa/pkg/logging"
+	"github.com/mrshah-at-ibm/rosa/pkg/ocm"
+	"github.com/mrshah-at-ibm/rosa/pkg/output"
+	rprtr "github.com/mrshah-at-ibm/rosa/pkg/reporter"
 	"github.com/spf13/cobra"
 )
 

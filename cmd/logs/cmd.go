@@ -19,9 +19,9 @@ package logs
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/openshift/rosa/cmd/logs/install"
-	"github.com/openshift/rosa/cmd/logs/uninstall"
-	"github.com/openshift/rosa/pkg/arguments"
+	"github.com/mrshah-at-ibm/rosa/cmd/logs/install"
+	"github.com/mrshah-at-ibm/rosa/cmd/logs/uninstall"
+	"github.com/mrshah-at-ibm/rosa/pkg/arguments"
 )
 
 var Cmd = &cobra.Command{

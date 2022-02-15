@@ -17,9 +17,9 @@ import (
 	"github.com/aws/aws-sdk-go/service/sts"
 	cmv1 "github.com/openshift-online/ocm-sdk-go/clustersmgmt/v1"
 
-	"github.com/openshift/rosa/pkg/arguments"
-	"github.com/openshift/rosa/pkg/aws/tags"
-	rprtr "github.com/openshift/rosa/pkg/reporter"
+	"github.com/mrshah-at-ibm/rosa/pkg/arguments"
+	"github.com/mrshah-at-ibm/rosa/pkg/aws/tags"
+	rprtr "github.com/mrshah-at-ibm/rosa/pkg/reporter"
 )
 
 var RoleNameRE = regexp.MustCompile(`^[\w+=,.@-]+$`)

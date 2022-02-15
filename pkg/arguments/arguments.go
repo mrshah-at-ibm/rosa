@@ -24,9 +24,9 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 
-	"github.com/openshift/rosa/pkg/aws/profile"
-	"github.com/openshift/rosa/pkg/aws/region"
-	"github.com/openshift/rosa/pkg/debug"
+	"github.com/mrshah-at-ibm/rosa/pkg/aws/profile"
+	"github.com/mrshah-at-ibm/rosa/pkg/aws/region"
+	"github.com/mrshah-at-ibm/rosa/pkg/debug"
 )
 
 var hasUnknownFlags bool

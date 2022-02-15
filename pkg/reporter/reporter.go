@@ -22,7 +22,7 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/openshift/rosa/pkg/debug"
+	"github.com/mrshah-at-ibm/rosa/pkg/debug"
 )
 
 // Builder contains the information and logic needed to create a new reporter.

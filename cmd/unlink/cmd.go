@@ -16,10 +16,10 @@ package unlink
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/openshift/rosa/cmd/unlink/ocmrole"
-	"github.com/openshift/rosa/cmd/unlink/userrole"
-	"github.com/openshift/rosa/pkg/arguments"
-	"github.com/openshift/rosa/pkg/interactive/confirm"
+	"github.com/mrshah-at-ibm/rosa/cmd/unlink/ocmrole"
+	"github.com/mrshah-at-ibm/rosa/cmd/unlink/userrole"
+	"github.com/mrshah-at-ibm/rosa/pkg/arguments"
+	"github.com/mrshah-at-ibm/rosa/pkg/interactive/confirm"
 )
 
 var Cmd = &cobra.Command{

@@ -23,7 +23,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	rprtr "github.com/openshift/rosa/pkg/reporter"
+	rprtr "github.com/mrshah-at-ibm/rosa/pkg/reporter"
 )
 
 var Cmd = &cobra.Command{

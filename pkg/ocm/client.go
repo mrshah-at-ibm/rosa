@@ -25,10 +25,10 @@ import (
 	sdk "github.com/openshift-online/ocm-sdk-go"
 	"github.com/sirupsen/logrus"
 
-	"github.com/openshift/rosa/pkg/aws"
-	"github.com/openshift/rosa/pkg/info"
-	"github.com/openshift/rosa/pkg/logging"
-	"github.com/openshift/rosa/pkg/reporter"
+	"github.com/mrshah-at-ibm/rosa/pkg/aws"
+	"github.com/mrshah-at-ibm/rosa/pkg/info"
+	"github.com/mrshah-at-ibm/rosa/pkg/logging"
+	"github.com/mrshah-at-ibm/rosa/pkg/reporter"
 )
 
 type Client struct {

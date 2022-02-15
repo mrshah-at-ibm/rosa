@@ -25,11 +25,11 @@ import (
 	sdk "github.com/openshift-online/ocm-sdk-go"
 	"github.com/spf13/cobra"
 
-	"github.com/openshift/rosa/cmd/logout"
-	"github.com/openshift/rosa/pkg/interactive"
-	"github.com/openshift/rosa/pkg/logging"
-	"github.com/openshift/rosa/pkg/ocm"
-	rprtr "github.com/openshift/rosa/pkg/reporter"
+	"github.com/mrshah-at-ibm/rosa/cmd/logout"
+	"github.com/mrshah-at-ibm/rosa/pkg/interactive"
+	"github.com/mrshah-at-ibm/rosa/pkg/logging"
+	"github.com/mrshah-at-ibm/rosa/pkg/ocm"
+	rprtr "github.com/mrshah-at-ibm/rosa/pkg/reporter"
 )
 
 // #nosec G101

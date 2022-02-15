@@ -31,7 +31,7 @@ import (
 	"github.com/golang/glog"
 	sdk "github.com/openshift-online/ocm-sdk-go"
 
-	"github.com/openshift/rosa/pkg/debug"
+	"github.com/mrshah-at-ibm/rosa/pkg/debug"
 )
 
 // URLAliases allows the value of the `--env` option to map to the various API URLs.

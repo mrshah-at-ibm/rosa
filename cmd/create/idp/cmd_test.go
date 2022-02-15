@@ -5,8 +5,8 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	"github.com/openshift/rosa/cmd/create/idp"
-	"github.com/openshift/rosa/cmd/create/idp/mocks"
+	"github.com/mrshah-at-ibm/rosa/cmd/create/idp"
+	"github.com/mrshah-at-ibm/rosa/cmd/create/idp/mocks"
 )
 
 var _ = Describe("Cmd", func() {

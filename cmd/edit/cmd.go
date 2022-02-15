@@ -19,12 +19,12 @@ package edit
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/openshift/rosa/cmd/edit/addon"
-	"github.com/openshift/rosa/cmd/edit/cluster"
-	"github.com/openshift/rosa/cmd/edit/ingress"
-	"github.com/openshift/rosa/cmd/edit/machinepool"
-	"github.com/openshift/rosa/pkg/arguments"
-	"github.com/openshift/rosa/pkg/interactive"
+	"github.com/mrshah-at-ibm/rosa/cmd/edit/addon"
+	"github.com/mrshah-at-ibm/rosa/cmd/edit/cluster"
+	"github.com/mrshah-at-ibm/rosa/cmd/edit/ingress"
+	"github.com/mrshah-at-ibm/rosa/cmd/edit/machinepool"
+	"github.com/mrshah-at-ibm/rosa/pkg/arguments"
+	"github.com/mrshah-at-ibm/rosa/pkg/interactive"
 )
 
 var Cmd = &cobra.Command{

@@ -23,7 +23,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/awserr"
 	"github.com/aws/aws-sdk-go/service/iam"
-	"github.com/openshift/rosa/pkg/aws/tags"
+	"github.com/mrshah-at-ibm/rosa/pkg/aws/tags"
 )
 
 const (

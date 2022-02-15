@@ -19,10 +19,10 @@ package install
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/openshift/rosa/cmd/install/addon"
-	"github.com/openshift/rosa/pkg/arguments"
-	"github.com/openshift/rosa/pkg/interactive"
-	"github.com/openshift/rosa/pkg/interactive/confirm"
+	"github.com/mrshah-at-ibm/rosa/cmd/install/addon"
+	"github.com/mrshah-at-ibm/rosa/pkg/arguments"
+	"github.com/mrshah-at-ibm/rosa/pkg/interactive"
+	"github.com/mrshah-at-ibm/rosa/pkg/interactive/confirm"
 )
 
 var Cmd = &cobra.Command{

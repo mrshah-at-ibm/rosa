@@ -21,12 +21,12 @@ import (
 
 	"github.com/spf13/cobra"
 
+	"github.com/mrshah-at-ibm/rosa/pkg/aws"
+	"github.com/mrshah-at-ibm/rosa/pkg/interactive/confirm"
+	"github.com/mrshah-at-ibm/rosa/pkg/logging"
+	"github.com/mrshah-at-ibm/rosa/pkg/ocm"
+	rprtr "github.com/mrshah-at-ibm/rosa/pkg/reporter"
 	cmv1 "github.com/openshift-online/ocm-sdk-go/clustersmgmt/v1"
-	"github.com/openshift/rosa/pkg/aws"
-	"github.com/openshift/rosa/pkg/interactive/confirm"
-	"github.com/openshift/rosa/pkg/logging"
-	"github.com/openshift/rosa/pkg/ocm"
-	rprtr "github.com/openshift/rosa/pkg/reporter"
 )
 
 var Cmd = &cobra.Command{

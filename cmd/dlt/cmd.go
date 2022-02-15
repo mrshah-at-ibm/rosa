@@ -19,18 +19,18 @@ package dlt
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/openshift/rosa/cmd/dlt/accountroles"
-	"github.com/openshift/rosa/cmd/dlt/admin"
-	"github.com/openshift/rosa/cmd/dlt/cluster"
-	"github.com/openshift/rosa/cmd/dlt/idp"
-	"github.com/openshift/rosa/cmd/dlt/ingress"
-	"github.com/openshift/rosa/cmd/dlt/machinepool"
-	"github.com/openshift/rosa/cmd/dlt/ocmrole"
-	"github.com/openshift/rosa/cmd/dlt/oidcprovider"
-	"github.com/openshift/rosa/cmd/dlt/operatorrole"
-	"github.com/openshift/rosa/cmd/dlt/upgrade"
-	"github.com/openshift/rosa/pkg/arguments"
-	"github.com/openshift/rosa/pkg/interactive/confirm"
+	"github.com/mrshah-at-ibm/rosa/cmd/dlt/accountroles"
+	"github.com/mrshah-at-ibm/rosa/cmd/dlt/admin"
+	"github.com/mrshah-at-ibm/rosa/cmd/dlt/cluster"
+	"github.com/mrshah-at-ibm/rosa/cmd/dlt/idp"
+	"github.com/mrshah-at-ibm/rosa/cmd/dlt/ingress"
+	"github.com/mrshah-at-ibm/rosa/cmd/dlt/machinepool"
+	"github.com/mrshah-at-ibm/rosa/cmd/dlt/ocmrole"
+	"github.com/mrshah-at-ibm/rosa/cmd/dlt/oidcprovider"
+	"github.com/mrshah-at-ibm/rosa/cmd/dlt/operatorrole"
+	"github.com/mrshah-at-ibm/rosa/cmd/dlt/upgrade"
+	"github.com/mrshah-at-ibm/rosa/pkg/arguments"
+	"github.com/mrshah-at-ibm/rosa/pkg/interactive/confirm"
 )
 
 var Cmd = &cobra.Command{

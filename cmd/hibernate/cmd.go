@@ -19,8 +19,8 @@ package hibernate
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/openshift/rosa/cmd/hibernate/cluster"
-	"github.com/openshift/rosa/pkg/arguments"
+	"github.com/mrshah-at-ibm/rosa/cmd/hibernate/cluster"
+	"github.com/mrshah-at-ibm/rosa/pkg/arguments"
 )
 
 var Cmd = &cobra.Command{

@@ -19,9 +19,9 @@ package revoke
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/openshift/rosa/cmd/revoke/user"
-	"github.com/openshift/rosa/pkg/arguments"
-	"github.com/openshift/rosa/pkg/interactive/confirm"
+	"github.com/mrshah-at-ibm/rosa/cmd/revoke/user"
+	"github.com/mrshah-at-ibm/rosa/pkg/arguments"
+	"github.com/mrshah-at-ibm/rosa/pkg/interactive/confirm"
 )
 
 var Cmd = &cobra.Command{

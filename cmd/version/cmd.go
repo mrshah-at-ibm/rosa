@@ -22,7 +22,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/openshift/rosa/pkg/info"
+	"github.com/mrshah-at-ibm/rosa/pkg/info"
 )
 
 var Cmd = &cobra.Command{

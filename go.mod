@@ -1,4 +1,4 @@
-module github.com/openshift/rosa
+module github.com/mrshah-at-ibm/rosa
 
 go 1.16
 

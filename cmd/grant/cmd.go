@@ -19,8 +19,8 @@ package grant
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/openshift/rosa/cmd/grant/user"
-	"github.com/openshift/rosa/pkg/arguments"
+	"github.com/mrshah-at-ibm/rosa/cmd/grant/user"
+	"github.com/mrshah-at-ibm/rosa/pkg/arguments"
 )
 
 var Cmd = &cobra.Command{

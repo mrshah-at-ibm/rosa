@@ -27,8 +27,8 @@ import (
 	"github.com/aws/aws-sdk-go/service/iam"
 	"github.com/sirupsen/logrus"
 
-	"github.com/openshift/rosa/assets"
-	rprtr "github.com/openshift/rosa/pkg/reporter"
+	"github.com/mrshah-at-ibm/rosa/assets"
+	rprtr "github.com/mrshah-at-ibm/rosa/pkg/reporter"
 )
 
 func readCloudFormationTemplate(path string) (string, error) {

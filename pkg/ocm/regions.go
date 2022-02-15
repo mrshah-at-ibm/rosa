@@ -22,9 +22,9 @@ import (
 
 	cmv1 "github.com/openshift-online/ocm-sdk-go/clustersmgmt/v1"
 
-	"github.com/openshift/rosa/pkg/aws"
-	"github.com/openshift/rosa/pkg/logging"
-	rprtr "github.com/openshift/rosa/pkg/reporter"
+	"github.com/mrshah-at-ibm/rosa/pkg/aws"
+	"github.com/mrshah-at-ibm/rosa/pkg/logging"
+	rprtr "github.com/mrshah-at-ibm/rosa/pkg/reporter"
 )
 
 func (c *Client) GetRegions(roleARN string, externalID string) (regions []*cmv1.CloudRegion, err error) {

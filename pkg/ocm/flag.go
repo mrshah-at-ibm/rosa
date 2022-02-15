@@ -21,9 +21,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/openshift/rosa/pkg/aws"
-	"github.com/openshift/rosa/pkg/logging"
-	rprtr "github.com/openshift/rosa/pkg/reporter"
+	"github.com/mrshah-at-ibm/rosa/pkg/aws"
+	"github.com/mrshah-at-ibm/rosa/pkg/logging"
+	rprtr "github.com/mrshah-at-ibm/rosa/pkg/reporter"
 )
 
 var clusterKey string

@@ -19,11 +19,11 @@ package upgrade
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/openshift/rosa/cmd/upgrade/accountroles"
-	"github.com/openshift/rosa/cmd/upgrade/cluster"
-	"github.com/openshift/rosa/cmd/upgrade/operatorroles"
-	"github.com/openshift/rosa/pkg/arguments"
-	"github.com/openshift/rosa/pkg/interactive"
+	"github.com/mrshah-at-ibm/rosa/cmd/upgrade/accountroles"
+	"github.com/mrshah-at-ibm/rosa/cmd/upgrade/cluster"
+	"github.com/mrshah-at-ibm/rosa/cmd/upgrade/operatorroles"
+	"github.com/mrshah-at-ibm/rosa/pkg/arguments"
+	"github.com/mrshah-at-ibm/rosa/pkg/interactive"
 )
 
 var Cmd = &cobra.Command{

@@ -19,10 +19,10 @@ package describe
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/openshift/rosa/cmd/describe/addon"
-	"github.com/openshift/rosa/cmd/describe/admin"
-	"github.com/openshift/rosa/cmd/describe/cluster"
-	"github.com/openshift/rosa/pkg/arguments"
+	"github.com/mrshah-at-ibm/rosa/cmd/describe/addon"
+	"github.com/mrshah-at-ibm/rosa/cmd/describe/admin"
+	"github.com/mrshah-at-ibm/rosa/cmd/describe/cluster"
+	"github.com/mrshah-at-ibm/rosa/pkg/arguments"
 )
 
 var Cmd = &cobra.Command{

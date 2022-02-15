@@ -17,11 +17,12 @@ limitations under the License.
 package logout
 
 import (
-	rprtr "github.com/openshift/rosa/pkg/reporter"
-	"github.com/spf13/cobra"
 	"os"
 
-	"github.com/openshift/rosa/pkg/ocm"
+	rprtr "github.com/mrshah-at-ibm/rosa/pkg/reporter"
+	"github.com/spf13/cobra"
+
+	"github.com/mrshah-at-ibm/rosa/pkg/ocm"
 )
 
 var Cmd = &cobra.Command{

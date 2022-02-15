@@ -35,7 +35,7 @@ import (
 	cmv1 "github.com/openshift-online/ocm-sdk-go/clustersmgmt/v1"
 	ocmerrors "github.com/openshift-online/ocm-sdk-go/errors"
 
-	"github.com/openshift/rosa/pkg/helper"
+	"github.com/mrshah-at-ibm/rosa/pkg/helper"
 )
 
 func init() {

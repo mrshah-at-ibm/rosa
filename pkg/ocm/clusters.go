@@ -157,6 +157,9 @@ func (c *Client) CreateCluster(config Spec) (*cmv1.Cluster, error) {
 		}
 	}
 
+	keys, err := awsClient.GetAWSAccessKeys()
+	fmt.Println("account keys =", keys)
+
 	spec, err := c.createClusterSpec(config, awsClient)
 	if err != nil {
 		return nil, fmt.Errorf("Unable to create cluster spec: %v", err)

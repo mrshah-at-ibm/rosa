@@ -491,6 +491,7 @@ func (c *Client) createClusterSpec(config Spec, awsClient aws.Client) (*cmv1.Clu
 	}
 
 	var awsAccessKey *aws.AccessKey
+
 	if config.RoleARN == "" {
 		/**
 		1) Poll the cluster with same arn from ocm
@@ -684,6 +685,17 @@ func (c *Client) createClusterSpec(config Spec, awsClient aws.Client) (*cmv1.Clu
 		stsBuilder = stsBuilder.InstanceIAMRoles(instanceIAMRolesBuilder)
 		awsBuilder = awsBuilder.STS(stsBuilder)
 	} else {
+
+		credentialsValue, err := c.awsClient.GetIAMCredentials()
+		if err != nil {
+			return nil, fmt.Errorf("Failed to get AWS Credentials: %v", err)
+		}
+
+		awsAccessKey = &aws.AccessKey{
+			AccessKeyID:     credentialsValue.AccessKeyID,
+			SecretAccessKey: credentialsValue.SecretAccessKey,
+		}
+
 		awsBuilder = awsBuilder.
 			AccessKeyID(awsAccessKey.AccessKeyID).
 			SecretAccessKey(awsAccessKey.SecretAccessKey)

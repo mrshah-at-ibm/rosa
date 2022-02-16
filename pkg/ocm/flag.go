@@ -67,6 +67,7 @@ func clusterCompletion(cmd *cobra.Command, args []string, toComplete string) ([]
 	}
 	defer ocmClient.Close()
 
+	fmt.Println("Calling aws.NewClient in clusterCompletion function")
 	awsClient, err := aws.NewClient().Logger(logger).Build()
 	if err != nil {
 		return []string{}, cobra.ShellCompDirectiveDefault

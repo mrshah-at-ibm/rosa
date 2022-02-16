@@ -157,8 +157,8 @@ func (c *Client) CreateCluster(config Spec) (*cmv1.Cluster, error) {
 		}
 	}
 
-	keys, err := awsClient.GetAWSAccessKeys()
-	fmt.Println("account keys =", keys)
+	// keys, err := awsClient.GetAWSAccessKeys()
+	// fmt.Println("account keys =", keys)
 
 	spec, err := c.createClusterSpec(config, awsClient)
 	if err != nil {
@@ -519,13 +519,13 @@ func (c *Client) createClusterSpec(config Spec, awsClient aws.Client) (*cmv1.Clu
 		}
 
 		// Create the access key for the AWS user:
-		awsAccessKey, err = awsClient.GetAWSAccessKeys()
-		if err != nil {
-			return nil, fmt.Errorf("Failed to get access keys for user '%s': %v",
-				aws.AdminUserName, err)
-		}
-		reporter.Debugf("Access key identifier is '%s'", awsAccessKey.AccessKeyID)
-		reporter.Debugf("Secret access key is '%s'", awsAccessKey.SecretAccessKey)
+		// awsAccessKey, err = awsClient.GetAWSAccessKeys()
+		// if err != nil {
+		// 	return nil, fmt.Errorf("Failed to get access keys for user '%s': %v",
+		// 		aws.AdminUserName, err)
+		// }
+		// reporter.Debugf("Access key identifier is '%s'", awsAccessKey.AccessKeyID)
+		// reporter.Debugf("Secret access key is '%s'", awsAccessKey.SecretAccessKey)
 	}
 
 	clusterProperties := map[string]string{}

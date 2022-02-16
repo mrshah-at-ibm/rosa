@@ -256,6 +256,7 @@ func (b *ClientBuilder) Build() (Client, error) {
 		b.region = aws.String(region)
 	}
 
+	fmt.Println("in rosa ocm.go =", b.credentials)
 	// Create the AWS session:
 	if b.credentials != nil {
 		sess, err = b.BuildSessionWithOptionsCredentials(b.credentials)
@@ -266,6 +267,10 @@ func (b *ClientBuilder) Build() (Client, error) {
 		return nil, err
 	}
 
+	fmt.Println("sess.credentials = ", sess.Config.Credentials)
+	creds, err := sess.Config.Credentials.Get()
+
+	fmt.Println("sess.credentials get = ", creds)
 	// Add ROSACLI as user-agent
 	sess.Handlers.Build.PushFrontNamed(addROSAVersionToUserAgent)
 

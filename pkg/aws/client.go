@@ -21,6 +21,7 @@ import (
 	"fmt"
 	"net/http"
 	"os"
+	"runtime/debug"
 	"strings"
 	"time"
 
@@ -237,6 +238,8 @@ func (b *ClientBuilder) Build() (Client, error) {
 	if b.logger == nil {
 		return nil, fmt.Errorf("Logger is mandatory")
 	}
+
+	debug.PrintStack()
 
 	// Create the AWS logger:
 	logger, err := logging.NewAWSLogger().

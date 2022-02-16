@@ -696,6 +696,7 @@ func (c *Client) createClusterSpec(config Spec, awsClient aws.Client) (*cmv1.Clu
 			SecretAccessKey: credentialsValue.SecretAccessKey,
 		}
 
+		fmt.Println("createClusterSpec awsAccessKey =", awsAccessKey)
 		awsBuilder = awsBuilder.
 			AccessKeyID(awsAccessKey.AccessKeyID).
 			SecretAccessKey(awsAccessKey.SecretAccessKey)
